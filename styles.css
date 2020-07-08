@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+#logo{
+    height: 190px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 10px;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+button {
+     font-size: 1.5em;
+     outline: none;
+     background: rgb(3, 194, 252);
+     border: none;
+     padding: 15px 30px;
+     border-radius: 50px;
+     cursor: pointer;
+     position: relative;
+     top: 1px;
+     margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+header a{
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    background-color: rgba(3, 194, 252, 0.5);
+    transition: all 0.8s ease;
+}
+
+.slider{
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+}
+
+
+.img-caption{
+    width: 1000%;
+    height: 450px;
+    animation: 30s travelslide infinite;
+}
+
+.caption{
+    height: 450px;
+    width: 10%;
+    float: left;
+    font-size: 2.5em;
+    text-align: center;
+    color: #ffffff;
+    padding:400px 0px 0px 0px;
+}
+
+.slider .caption:nth-child(1){
+    background-image: url(beach1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(2){
+    background-image: url(beach3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(3){
+    background-image: url(beach5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(4){
+    background-image: url(beach6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(5){
+    background-image: url(beach7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(6){
+    background-image: url(beach8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(7){
+    background-image: url(beach9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(8){
+    background-image: url(beach10.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(9){
+    background-image: url(beach11.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+.slider .caption:nth-child(10){
+    background-image: url(beach1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+@keyframes travelslide {
+    0%{
+        margin-left: 0;
+    }
+    10%{
+        margin-left: 0;
+    }
+    15%{
+        margin-left: -100%;
+    }
+    20%{
+        margin-left:-100%;
+    }
+    25%{
+        margin-left: -200%;
+    }
+    30%{
+        margin-left: -200%;
+    }
+    35%{
+        margin-left: -300%;
+    }
+    40%{
+        margin-left: -300%;
+    }
+    45%{
+        margin-left: -400%;
+    }
+    50%{
+        margin-left: -400%;
+    }
+    55%{
+        margin-left: -500%;
+    }
+    60% {
+        margin-left: -500%;
+    }
+    65%{
+        margin-left: -600%;
+    }
+    70%{
+        margin-left: -600%;
+    }
+    75%{
+        margin-left: -700%;
+    }
+    80%{
+        margin-left: -700%;
+    }
+    85%{
+        margin-left: -800%;
+    }
+    90%{
+        margin-left: -800%;
+    }
+    100%{
+        margin-left: -900%;
+    }
+}
+
+section h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 50px 15px 10px 15px;
+}
+
+.subcontainer{
+    text-align: center;
+    font-size: 1.2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.sc1 {
+    background-image: url(travel1.jpg);
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.sc2 {
+    background-image: url(buy.jpg);
+    color: #000000;
+}
+
+.sc3 {
+    background-image: url(bags.jpg);
+    color: #ffffff;
+}
+
+.sc4 {
+    background-image: url(TRAVELPLAN.jpg);
+    color: #000000;
+
+}
+
+.subcon-btn {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255, 255, 255,0.4);
+    border-radius: 45PX;
+}
+
+.subcon-btn:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease;
+}
+
+article h1,
+article button{
+    position: relative;
+    top: 200px;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div ul li{
+    list-style: none;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

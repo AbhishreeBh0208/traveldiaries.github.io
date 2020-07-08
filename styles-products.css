@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+#logo{
+    height: 190px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 10px;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+button {
+     font-size: 1.5em;
+     outline: none;
+     background: rgb(3, 194, 252);
+     border: none;
+     padding: 15px 30px;
+     border-radius: 50px;
+     cursor: pointer;
+     position: relative;
+     top: 1px;
+     margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+header a{
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    background-color: rgba(3, 194, 252, 0.5);
+    transition: all 0.8s ease;
+}
+
+.travelslide{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+
+}
+
+.slides{
+    width: 500%;
+    height: 450px;
+    animation: product-slide 20s infinite;
+}
+
+.slide {
+    width: 20%;
+    height: 450px;
+    float: left;
+    padding: 150px 10px 5px 400px;
+    text-align: right;
+    position: relative;
+    font-size: 2em;
+}
+
+
+#s1{
+    background-image: url(frontslider.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+    color: #ffffff;
+}
+
+#s2{
+    background-image: url(suitcase.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+#s3{
+    background-image: url(flight.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+    color: #ffffff;
+}
+
+#s4{
+    background-image: url(about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+}
+
+@keyframes product-slide{
+    0%{
+        margin-left: 0;
+        transition: ease;
+    }
+    12.5%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -100%;
+        transition: ease;
+    }
+    37.5%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+        transition: ease;
+    }
+    62.5%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+        transition: ease;
+    }
+    87.5%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: -400%;
+        transition: ease;
+    }
+}
+
+.slide button {
+    outline: none;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    top: 150px;
+    left: 500px;
+}
+
+.slide button:hover{
+    background-color: rgba(255,255,255,0.9);
+    transition: all 0.5s ease;
+}
+
+footer {
+    clear: both;
+    background-color: rgb(126, 122, 122);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div ul li{
+    list-style: none;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article h1{
+    font-size: 4.5em;
+    text-align: left;
+    margin: 15px;
+}
+
+article h2 {
+    font-size: 1.2em;
+    color: rgba(0,0,0,0.5);
+    margin: 15px;
+}
+
+.product1, .product2, .product3 {
+    display: flex;
+    margin: 10px auto;
+}
+
+.pro-1-img, .pro-2-img, .pro-3-img{
+    width: 700px;
+    height: 420px;
+
+}
+
+.pro-1-img img, .pro-2-img img, .pro-3-img img {
+    width: 350px;
+    height: 400px;
+    margin: 15px;
+}
+
+.pro-text-1, .pro-text-2, .pro-text-3 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    top: 15px;
+    left: -330px;
+    text-align: center;
+    border: 2px solid rgba(0,0,0,0.5);
+
+}
+
+span {
+    color:  rgba(0,0,0,0.5);
+    text-decoration: line-through;
+}
+
+.product1 button, .product2 button, .product3 button{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    margin: 50px;
+
+}
+
+.product1 a:hover, .product2 a:hover, .product3 a:hover{
+    color: rgb(255,255,255);
+}
+
+.product1 button:hover, .product2 button:hover, .product3 button:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: all 0.5s ease;
+}
+
+.choose {
+    color: #000000;
+    font-size: 2em;
+}
+
+.choice{
+    text-align: center;
+    font-size: 1.2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    padding: 40px;
+}
+
+.choice1 {
+    background-image: url(hill-station.jpg);
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.choice2 {
+    background-image: url(deserts.jpg);
+    color: #000000;
+}
+
+.choice3 {
+    background-image: url(beach13.jpg);
+    color: #000000;
+}
+
+.choice4 {
+    background-image: url(futuristic-city.jpg);
+    color: #ffffff;
+}
+
+.choice button {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255, 255, 255,0.4);
+    border-radius: 45PX;
+}
+
+.choice button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease;
+}
